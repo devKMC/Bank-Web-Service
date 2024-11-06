@@ -3,7 +3,7 @@
         <h2>로그인</h2>
         <form @submit.prevent="handleSubmit">
             <div class="login-form">
-            <div class="login-contents">
+                <div class="login-contents">
                     <label for="username">사용자 이름:</label>
                     <input 
                         type="text" 
@@ -22,10 +22,12 @@
                     />
                 </div>
                 <button type="submit">로그인</button>
+                <router-link to="/signup">회원가입</router-link>
             </div>
         </form>
     </div>
 </template>
+
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
